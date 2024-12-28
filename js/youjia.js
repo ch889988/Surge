@@ -1,5 +1,5 @@
 const params = getParams($argument);
-const provinceName = params.provname || "江苏";
+const provinceName = params.provname || "浙江";
 const apiUrls = [
   `https://apis.tianapi.com/oilprice/index?key=8d193f5602157675330ecb8355bbefb4&prov=${encodeURIComponent(provinceName)}`,
   `https://apis.tianapi.com/oilprice/index?key=8d193f5602157675330ecb8355bbefb4&prov=${encodeURIComponent(provinceName)}`,
@@ -52,13 +52,16 @@ function handleResponse(data) {
   }
 }
 
-function getParams(param) {
-  return Object.fromEntries(
-    param
-      .split("&")
-      .map((item) => item.split("="))
-      .map(([k, v]) => [k, decodeURIComponent(v)])
-  );
+function getParams() {
+  try {
+    //传入参数：provname
+    let quires = getArgs();
+    return quires;
+  } catch (e) {
+    throw e;
+  }
 }
+
+function getArgs(t = {}) { let e; return e = "undefined" != typeof $argument ? Object.fromEntries($argument.split("&").map((t => t.split("=")))) : {}, $.info(`传入的 $argument: ${$.toStr(e)}`), e = { ...e, ...$.getjson(NAMESPACE, t) }, $.info(`从持久化存储读取参数后: ${$.toStr(e)}`), e }
 
 testNextUrl();
