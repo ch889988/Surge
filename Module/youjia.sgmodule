@@ -1,6 +1,6 @@
 ﻿#!name=油价查询
 #!desc=油价信息
-#!arguments="icon:car,color:c932a9,provname:"
+#!arguments="icon:car,color:c932a9,provname:''"
 #!arguments-desc="provname后面填写所在省份名，如不填写，默认江苏油价。provname的值不带"省"字 范例：provname=江苏，provname=上海，provname=广东"
 
 
