@@ -1,0 +1,19 @@
+#!name=虎牙去广告
+#!desc=虎牙去广告
+
+[Rule]
+DOMAIN,acdn.adnxs.com,REJECT
+DOMAIN,mediation.adnxs.com,REJECT
+DOMAIN,sin3-ib.adnxs.com,REJECT
+
+[Map Local]
+^https?:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$ data-type=text data="{}" status-code=200
+
+^https?:\/\/business\.msstatic\.com\/advertiser\/material data-type=text data="{}" status-code=200
+
+^https?:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/ data-type=text data="{}" status-code=200
+
+^https?://live-ads\.huya\.com/live/getAllEntrance.*$ data-type=text data="{}" status-code=200
+
+[MITM]
+hostname = %APPEND% cdn.wup.huya.com, business.msstatic.com, cdnfile1.msstatic.com, live-ads.huya.com
