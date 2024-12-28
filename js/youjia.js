@@ -1,10 +1,6 @@
 const params = getParams($argument);
 const provinceName = params.provname || "浙江";
 const apiUrls = [
-  `https://apis.tianapi.com/oilprice/index?key=8d193f5602157675330ecb8355bbefb4&prov=${encodeURIComponent(provinceName)}`,
-  `https://apis.tianapi.com/oilprice/index?key=8d193f5602157675330ecb8355bbefb4&prov=${encodeURIComponent(provinceName)}`,
-  `https://apis.tianapi.com/oilprice/index?key=8d193f5602157675330ecb8355bbefb4&prov=${encodeURIComponent(provinceName)}`,
-  `https://apis.tianapi.com/oilprice/index?key=8d193f5602157675330ecb8355bbefb4&prov=${encodeURIComponent(provinceName)}`,
   `https://apis.tianapi.com/oilprice/index?key=8d193f5602157675330ecb8355bbefb4&prov=${encodeURIComponent(provinceName)}`
 ];
 let currentIndex = 0;
