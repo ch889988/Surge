@@ -1,6 +1,30 @@
 #!name=百度网盘
 #!desc=百度网盘
 
+[Map Local]
+# > 百度网盘_启动弹窗
+^https?:\/\/.*baidu\.com\/rest\/.*\/membership\/proxy\/guide data-type=text data=" " status-code=200
+
+# > 百度网盘_设置信息流
+^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list data-type=text data=" " status-code=200
+
+# > 百度网盘_通用广告
+^https?:\/\/pan\.baidu\.com\/rest\/.*\/pcs\/ad data-type=text data=" " status-code=200
+
+# > 百度网盘_活动推广
+^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry data-type=text data=" " status-code=200
+
+# > 百度网盘_热搜
+^https:\/\/pan\.baidu\.com\/feed\/hotlist data-type=text data=" " status-code=200
+
+# > 百度网盘_活动推广
+^https?:\/\/.*zhangyuyidong\.cn\/api\/zysdk data-type=text data=" " status-code=200
+
+# > 百度网盘_搜索填词
+^https:\/\/pan\.baidu\.com\/queryintent\/queryhint data-type=text data=" " status-code=200
+
+# > 百度网盘_金币乐园
+^https:\/\/pan\.baidu\.com\/coins\/center\/notice data-type=text data=" " status-code=200
 
 [Script]
 BaiduCloud = type=http-response, pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user, script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/baiducloud.js, requires-body=true
