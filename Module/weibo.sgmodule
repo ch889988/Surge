@@ -81,14 +81,14 @@ DOMAIN-SUFFIX,biz.weibo.com,REJECT
 
 移除发现页广告 = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/searchall\?, script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/weibo.js, requires-body=true
 
-# 开屏广告 //*.uve.weibo.com
+# 开屏广告
 移除开屏广告 = type=http-response, pattern=^https:\/\/bootpreload\.uve\.weibo\.com\/v[12]\/ad\/preload, script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/weibo.js, requires-body=true
 
 移除开屏广告 = type=http-response, pattern=^https:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php, script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/weibo.js, requires-body=true
 
 移除开屏广告 = type=http-response, pattern=^https:\/\/wbapp\.uve\.weibo\.com\/(?:preload\/get_ad|wbapplua\/wbpullad\.lua), script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/weibo.js, requires-body=true
 
-# 会员图标
+# 会员图标1
 会员图标 = type=http-response, pattern=^https:\/\/new\.vip\.weibo\.cn\/aj\/appicon\/list\?, script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/weibo.js, requires-body=true
 
 [MITM]
