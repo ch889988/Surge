@@ -1,0 +1,33 @@
+#!name=酷我音乐
+#!desc=酷我音乐
+
+[Rule]
+DOMAIN-SUFFIX,ugdtimg.com,REJECT,pre-matching,extended-matching
+DOMAIN,mobilead.kuwo.cn,REJECT,pre-matching,extended-matching
+DOMAIN,adstats.tencentmusic.com,REJECT,pre-matching,extended-matching
+DOMAIN,adsmind.gdtimg.com,REJECT,pre-matching,extended-matching
+DOMAIN,ad.tencentmusic.com,REJECT,pre-matching,extended-matching
+DOMAIN,mc.tencentmusic.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^http:\/\/rich\.kuwo\.cn\/AdService\/,REJECT-TINYGIF,extended-matching
+URL-REGEX,^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/user\/freeMode\/,REJECT-TINYGIF,extended-matching
+URL-REGEX,^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/app\/pasterAdvert\/,REJECT-TINYGIF,extended-matching
+URL-REGEX,^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/app\/startup\/config,REJECT-TINYGIF,extended-matching
+URL-REGEX,^http:\/\/rich\.kuwo\.cn\/EcomResourceServer\/,REJECT-TINYGIF,extended-matching
+URL-REGEX,^http:\/\/searchrecterm\.kuwo\.cn\/recterm\.s,REJECT-TINYGIF,extended-matching
+URL-REGEX,^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/app\/newMenuList\/menuListInfo,REJECT-TINYGIF,extended-matching
+URL-REGEX,"^http:\/\/vip\d\.kuwo\.cn\/vip\/v\d\/sysinfo\?op=getRePayAndDoPayBox",REJECT-TINYGIF,extended-matching
+URL-REGEX,^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/album\/adBar\/,REJECT-TINYGIF,extended-matching
+
+[Map Local]
+# 酷我音乐首页-推广语
+^https:\/\/vip\d\.kuwo\.cn\/commercia\/vipconf\/projectPage\/getPageContent data-type=text data="{}" status-code=200
+^https:\/\/tingshu\.kuwo\.cn\/v2\/api\/pay\/user\/info data-type=text data="{}" status-code=200
+# 酷我音乐我的页面横幅
+^https:\/\/appi\.kuwo\.cn\/kuwopay\/personal\/cells data-type=text data="{}" status-code=200
+
+[Script]
+kuwo = type=http-response,pattern=^https?:\/\/(?:musicpay|nmobi|vip1|audiobookpay|tingshu)\.kuwo\.cn\/(?:music\.pay\?newver=\d+|mobi.s\?f=kwxs|vip\/(?:enc\/user\/vip\?op=ui&uid=|v2\/theme\?op=gd)|a\.p|v2\/api\/pay\/user\/info),script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/kuwo.js,requires-body=true,timeout=60
+移除听书页面广告 = type=http-response,pattern=^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/tingshu\/index\/radio,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/kuwo.js,requires-body=true
+
+[MITM]
+hostname = *.kuwo.cn,  %APPEND% *.kuwo.cn
