@@ -10,7 +10,7 @@
 2025-01-04
 # 脚本修改来源 https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js
 # 1. 京东很奇怪，标题下面的比价时有时无  所以增加点击【详情】显示比价(显示在页内)
-# 2. 抄袭上面的部分代码，让显示格式尽量对其
+# 2. 修改上面的部分代码，让显示格式尽量对其
 
 [rewrite_local]
 ^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
