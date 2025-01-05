@@ -1,0 +1,9 @@
+#!name=京东比价
+#!desc=京东比价
+#!tips=京东版本V13.8.2
+
+[Script]
+JD_Price = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/jd_price.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.m.jd.com
