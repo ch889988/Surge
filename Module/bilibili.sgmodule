@@ -1,0 +1,69 @@
+#!name=bilibili去广告
+#!desc=bilibili去广告
+
+[URL Rewrite]
+# ～BiliBili_哔哩哔哩_屏蔽IP请求
+^https?:\/\/app\.bilibili\.com\/x\/resource\/ip - reject
+# ～BiliBili_哔哩哔哩_屏蔽DefaultWord
+^https?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Search\/Default - reject
+# ～BiliBili_哔哩哔哩_去除搜索中的大家都在搜@bm7
+^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
+
+[Map Local]
+# ～BiliBili_哔哩哔哩_屏蔽首页右上活动
+^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity data-type=text data="{}" status-code=200
+# ～BiliBili_哔哩哔哩_Defaultword
+^https://app.bilibili.com/x/v2/search/defaultwords data-type=text data="{}" status-code=200
+# ～BiliBili_哔哩哔哩_Material_Ad
+^https?:\/\/api\.bilibili\.com\/x\/vip\/ads\/material\/report data-type=text data="{}" status-code=200
+# ～BiliBili_哔哩哔哩_小卡片广告
+^https://api.bilibili.com/pgc/season/player/cards data-type=text data="{}" status-code=200
+# ～BiliBili_哔哩哔哩_去除动态中的话题
+^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr data-type=text data="{}" status-code=200
+# ～BiliBili_哔哩哔哩_可能的一些推广
+^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? data-type=text data="{}" status-code=200
+# ～BiliBili_哔哩哔哩_漫画去广告
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) data-type=text data="{}" status-code=200
+# ～ BiliBili_哔哩哔哩_屏蔽广告浮窗
+^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive data-type=text data="{}" status-code=200
+# ～ BiliBili_哔哩哔哩_点击追番Card
+^https?:\/\/api\.bilibili\.com\/pgc\/season\/player\/ogv\/cards data-type=text data="{}" status-code=200
+
+[Script]
+# ～BiliBili_哔哩哔哩_观影页面去广告
+bilibili_json = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js,requires-body=true
+# ～BiliBili_哔哩哔哩_去除统一设置的皮肤
+bilibili_json = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\?,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js,requires-body=true
+# ～BiliBili_哔哩哔哩_热搜发现
+bilibili_json = type=http-response,pattern=^https://app.bilibili.com/x/v2/search/square,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js,requires-body=true
+# ～BiliBili_哔哩哔哩_推荐去广告
+bilibili_json = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js,requires-body=true
+# ～ BiliBili_哔哩哔哩_交互点赞投票弹幕及会员弹幕
+bilibili_proto_beta = type=http-response,pattern=^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.community\.service\.dm\.v1\.DM\/(DmView|DmSegMobile),script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_proto.js,requires-body=true,binary-body-mode=true,timeout=60
+# ～ BiliBili_哔哩哔哩_青少年弹窗
+bilibili_proto_beta = type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_proto.js,requires-body=true,binary-body-mode=true,timeout=60
+# ～ BiliBili_哔哩哔哩_UP主推荐广告[适配ipad端]
+bilibili_proto_beta = type=http-response,pattern=^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.(view|viewunite)\.v1\.View\/(View|TFInfo)$,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_proto.js,requires-body=true,binary-body-mode=true,timeout=60
+# ～BiliBili_哔哩哔哩_追番去广告
+bilibili_json = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js,requires-body=true
+# ～BiliBili_哔哩哔哩_直播去广告
+bilibili_json = type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js,requires-body=true
+# ～BiliBili_哔哩哔哩_动态去广告
+bilibili_json = type=http-response,pattern=^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js,requires-body=true
+# ～BiliBili_哔哩哔哩_标籤页处理
+bilibili_json = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js,requires-body=true
+# ～BiliBili_哔哩哔哩_我的页面处理
+bilibili_json = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js,requires-body=true
+# ～BiliBili_哔哩哔哩去广告
+bili-json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-json.js,script-update-interval=0
+# ～BiliBili_哔哩哔哩_Proto去广告
+bilibili-proto = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js,requires-body=true
+# ～BiliBili_哔哩哔哩_动态广告
+bilibili_dynamic = type=http-response,pattern=^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/DynAll$,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/bilibili/bilibili_dynamic.js,requires-body=true
+# ～BiliBili_哔哩哔哩去除短视频信息流
+Story_1 = type=http-request,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\?,script-path=https://github.com/Moli-X/Resources/raw/main/Script/Bilibili/Story.js,timeout=60
+# ～BiliBili_开启Bili1080P
+Bili1080P = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,requires-body=1,script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/bilibili_json.js
+
+[MITM]
+hostname = app.bilibili.com, %APPEND% app.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, api.bilibili.com, manga.bilibili.com, grpc.biliapi.net, api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net
