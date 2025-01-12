@@ -1,7 +1,7 @@
 const DEFAULT_OPTIONS = {
     title: 'DAZN 解锁检测',
     availableContent: '支持DAZN：#REGION_CODE#',
-    availableIcon: 'checkmark.seal',
+    availableIcon: '',
     availableIconColor: '#008000',
     availableStyle: 'good',
     comingtitle: 'DAZN 解锁检测',
