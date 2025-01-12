@@ -1,0 +1,8 @@
+#!name=流量统计
+#!desc=流量统计
+
+[Script]
+TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ch889988/Surge/main/js/trafficstatistics.js,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
+
+[Panel]
+TrafficStatistics = script-name=TrafficStatistics,update-interval=-1
