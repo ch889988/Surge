@@ -24,6 +24,11 @@
     }
   }
 
+  if (!expire) {
+    content.push(`剩余：${toMultiply(total, used)} \t|  重置：无`);
+    content.push(`到期：长期有效`);
+  }
+
   let now = new Date();
   let hour = now.getHours();
   let minutes = now.getMinutes();
