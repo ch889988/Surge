@@ -1,0 +1,8 @@
+#!name=养基宝
+#!desc=养基宝
+
+[Script]
+yangjibao = type=http-response, pattern=^https?:\/\/.*yangjibao\.com\/(wxapi\/)?account, script-path=https://raw.githubusercontent.com/ch889988/Surge/main/js/yangjibao.js, requires-body=true, timeout=60
+
+[MITM]
+hostname = %APPEND% *.yangjibao.com
