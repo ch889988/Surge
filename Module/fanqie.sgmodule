@@ -2,7 +2,6 @@
 #!desc=番茄小说去广告
 
 [Rule]
-
 DOMAIN,p6-ad-sign.byteimg.com,REJECT
 
 DOMAIN,p9-ad-sign.byteimg.com,REJECT
@@ -65,9 +64,7 @@ IP-CIDR,101.36.166.16/32,REJECT,no-resolve
 
 IP-CIDR,180.96.2.114/32,REJECT,no-resolve
 
-
 [URL Rewrite]
-
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ - reject
 
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 - reject
@@ -95,7 +92,6 @@ IP-CIDR,180.96.2.114/32,REJECT,no-resolve
 ^http:\/\/.+\.byteimg\.com\/web\.business\.image - reject
 
 ^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ - reject
-
 
 [MITM]
 hostname = %APPEND% *.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.*,*default.ixigua.com
