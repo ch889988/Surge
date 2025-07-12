@@ -21,6 +21,7 @@
       content.push(`重置：${resetDayLeft}天`);
     } else if (!resetDayLeft && expire) {
       if (/^[\d.]+$/.test(expire)) expire *= 1000;
+      content.push(`剩余：${toMultiply(total, used)} \t`);
       content.push(`到期：${formatTime(expire)}`);
     }
   }
