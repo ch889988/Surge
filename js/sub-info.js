@@ -16,7 +16,8 @@
       if (/^[\d.]+$/.test(expire)) expire *= 1000;
       content.push(`剩余：${toMultiply(total, used)} \t|  重置：${resetDayLeft}天`);
       content.push(`到期：${formatTime(expire)}`);
-    } else if (resetDayLeft && !expire) {
+    } else if (resetDayLeft && !expire) {\
+      content.push(`剩余：${toMultiply(total, used)} \t`);
       content.push(`重置：${resetDayLeft}天`);
     } else if (!resetDayLeft && expire) {
       if (/^[\d.]+$/.test(expire)) expire *= 1000;
