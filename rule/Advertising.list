@@ -516,7 +516,6 @@ IP-CIDR,202.105.165.202/32,no-resolve
 IP-CIDR,202.106.199.34/31,no-resolve
 IP-CIDR,202.106.199.36/31,no-resolve
 IP-CIDR,202.106.199.38/32,no-resolve
-IP-CIDR,202.90.108.13/32,no-resolve
 IP-CIDR,202.90.110.46/32,no-resolve
 IP-CIDR,202.98.24.121/32,no-resolve
 IP-CIDR,202.98.24.122/31,no-resolve
