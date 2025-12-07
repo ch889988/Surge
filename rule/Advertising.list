@@ -11,7 +11,6 @@ DOMAIN-KEYWORD,.freecontent.
 DOMAIN-KEYWORD,.net.daraz.
 DOMAIN-KEYWORD,.nimiq.
 DOMAIN-KEYWORD,.zooplus.
-DOMAIN-KEYWORD,_vmind.qqvideo.tc.qq.com
 DOMAIN-KEYWORD,a8clk.
 DOMAIN-KEYWORD,a8cv.
 DOMAIN-KEYWORD,ad.ixigua.com
@@ -108,7 +107,6 @@ DOMAIN-KEYWORD,adsystem
 DOMAIN-KEYWORD,adtrack.ucweb.com
 DOMAIN-KEYWORD,adwords
 DOMAIN-KEYWORD,afpapi.alimama.com
-DOMAIN-KEYWORD,android.bugly.qq.com
 DOMAIN-KEYWORD,ap.51y5.net
 DOMAIN-KEYWORD,api.freed.so
 DOMAIN-KEYWORD,api.sobot.com
@@ -765,9 +763,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
 URL-REGEX,/\d+/resolve
 URL-REGEX,/\d+/sign_d
-URL-REGEX,^https?:\/\/.+?\.beacon\.qq\.com
-URL-REGEX,^https?:\/\/.+?\.l\.qq\.com
-URL-REGEX,^https?:\/\/\w+\.gdt\.qq\.com
 URL-REGEX,^https?:\/\/ad\d\.sina\.com
 URL-REGEX,^https?:\/\/ad\d\.sina\.com.cn
 URL-REGEX,^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement
