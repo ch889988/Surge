@@ -766,6 +766,9 @@ URL-REGEX,/\d+/sign_d
 URL-REGEX,^https?:\/\/ad\d\.sina\.com
 URL-REGEX,^https?:\/\/ad\d\.sina\.com.cn
 URL-REGEX,^https?:\/\/app\.58\.com\/api\/log\/
+URL-REGEX,^https?:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v\d\/assemble\/list\/pub\/channel\/app_open_screen_ad
+URL-REGEX,^https?:\/\/app-gw\.csdn\.net\/abtesting\/v2\/getList?
+URL-REGEX,^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement
 URL-REGEX,^https?:\/\/d\d.sinaimg.cn
 URL-REGEX,^https?:\/\/sa\d\.tuisong\.baidu\.com
 URL-REGEX,^https?:\/\/sax\w?\.sina\.com\.cn
