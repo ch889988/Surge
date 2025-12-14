@@ -5,6 +5,8 @@
 DOMAIN,acdn.adnxs.com,REJECT
 DOMAIN,mediation.adnxs.com,REJECT
 DOMAIN,sin3-ib.adnxs.com,REJECT
+DOMAIN-SUFFIX,v1d.szbdyd.com,REJECT
+URL-REGEX,^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$,REJECT
 
 [Map Local]
 ^https?:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$ data-type=text data="{}" status-code=200
