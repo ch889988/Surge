@@ -21,6 +21,7 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 ^https:\/\/www\.zhihu\.com\/api\/v4\/mcn\/v2\/linkcards\? - reject
 ^https:\/\/www\.zhihu\.com\/api\/v4/(?:answers|questions)\/\d+/related-readings - reject
 ^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner - reject
+^https?:\/\/www\.zhihu\.com\/api\/v\d\/articles\/\d+\/recommendation url reject-dict
 ^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation - reject
 ^https?:\/\/.*zhihu\.com\/ad-style-service\/request - reject
 ^https?:\/\/.*zhihu\.com\/commercial_api - reject
