@@ -1,14 +1,32 @@
 #!name=知乎去广告
 #!desc=知乎去广告
 
+[Rule]
+DOMAIN,appcloud.zhihu.com,REJECT
+DOMAIN,appcloud2.in.zhihu.com,REJECT
+DOMAIN,crash2.zhihu.com,REJECT
+DOMAIN,mqtt.zhihu.com,REJECT
+DOMAIN,sugar.zhihu.com,REJECT
+DOMAIN,zxid-m.mobileservice.cn,REJECT
+IP-CIDR,103.41.167.237/32,REJECT,no-resolve
+IP-CIDR,118.89.204.198/32,REJECT,no-resolve
+IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
+
 [URL Rewrite]
 ^https?:\/\/.*zhihu\.com\/ad-style-service\/request - reject
-# > 知乎_热榜页去除直播
 ^https?:\/\/api\.zhihu\.com\/drama\/hot-drama-list - reject
-# > 知乎_回答页面顶部推广
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/topics\/rank_list\/question\/\d+\/related - reject
-# > 知乎_首页右下角悬浮窗
 ^https?:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer - reject
+^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card - reject
+^https:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config - reject
+^https:\/\/link\.zhihu\.com\/\?target=(?:https?)?(?:%3A|:)?(?:\/\/|%2F%2F)?(.*) http://$1 302
+^https:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation - reject
+^https:\/\/www\.zhihu\.com\/api\/v4\/mcn\/v2\/linkcards\? - reject
+^https:\/\/www\.zhihu\.com\/api\/v4/(?:answers|questions)\/\d+/related-readings - reject
+^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner - reject
+^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation - reject
+^https?://link\.zhihu\.com/\?target=https?%3A//(.*) https://$1 302
+^https?://oia\.zhihu\.com https://zhuanlan.zhihu.com 302
 
 [Body Rewrite]
 http-response-jq ^https?:\/\/.*zhihu.com\/(answers|articles)\/v\d '.third_business |= del(.related_queries, .ring)'
