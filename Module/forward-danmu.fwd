@@ -1,0 +1,25 @@
+{
+  "title": "弹幕模块",
+  "description": "弹幕模块",
+  "icon": "https://assets.vvebo.vip/scripts/icon.png",
+  "widgets": [
+    {
+      "id": "forward.danmu",
+      "title": "Funmedia弹幕",
+      "description": "Funmedia弹幕",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.3",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/funmedia.js"
+    },
+    {
+      "id": "forward.danmu",
+      "title": "Saodu弹幕",
+      "description": "Saodu弹幕",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.3",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/saodu.js"
+    }
+  ]
+}
