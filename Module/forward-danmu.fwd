@@ -23,8 +23,8 @@
     },
     {
       "id": "forward.danmu",
-      "title": "Saodu弹幕",
-      "description": "Saodu弹幕",
+      "title": "Sherk弹幕",
+      "description": "Sherk弹幕",
       "requiredVersion": "0.0.2",
       "version": "1.0.3",
       "author": "huangxd",
