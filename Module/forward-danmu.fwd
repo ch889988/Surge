@@ -20,6 +20,15 @@
       "version": "1.0.3",
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/saodu.js"
+    },
+    {
+      "id": "forward.danmu",
+      "title": "Saodu弹幕",
+      "description": "Saodu弹幕",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.3",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/sherk.js"
     }
   ]
 }
