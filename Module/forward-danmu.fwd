@@ -10,7 +10,7 @@
       "requiredVersion": "0.0.2",
       "version": "1.0.3",
       "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/funmedia.js"
     },
     {
       "id": "forward.danmu",
@@ -19,7 +19,7 @@
       "requiredVersion": "0.0.2",
       "version": "1.0.3",
       "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/lily.js"
     },
     {
       "id": "forward.danmu",
@@ -28,7 +28,7 @@
       "requiredVersion": "0.0.2",
       "version": "1.0.3",
       "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/sherk.js"
     }
   ]
 }
