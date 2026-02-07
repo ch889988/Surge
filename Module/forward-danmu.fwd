@@ -10,16 +10,16 @@
       "requiredVersion": "0.0.2",
       "version": "1.0.3",
       "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/funmedia.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu.js"
     },
     {
       "id": "forward.danmu",
-      "title": "Saodu弹幕",
-      "description": "Saodu弹幕",
+      "title": "Lily弹幕",
+      "description": "Lily弹幕",
       "requiredVersion": "0.0.2",
       "version": "1.0.3",
       "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/saodu.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu.js"
     },
     {
       "id": "forward.danmu",
@@ -28,7 +28,7 @@
       "requiredVersion": "0.0.2",
       "version": "1.0.3",
       "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/sherk.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu.js"
     }
   ]
 }
