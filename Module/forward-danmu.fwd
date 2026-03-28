@@ -50,12 +50,12 @@
     },
     {
       "id": "forward.danmu6",
-      "title": "Sherk弹幕",
-      "description": "Sherk弹幕",
+      "title": "Saodu弹幕",
+      "description": "Saodu弹幕",
       "requiredVersion": "0.0.2",
       "version": "1.0.3",
       "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/sherk.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/saodu.js"
     }
   ]
 }
