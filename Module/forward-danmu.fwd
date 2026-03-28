@@ -4,7 +4,7 @@
   "icon": "https://assets.vvebo.vip/scripts/icon.png",
   "widgets": [
     {
-      "id": "forward.danmu",
+      "id": "forward.danmu1",
       "title": "Funmedia弹幕",
       "description": "Funmedia弹幕",
       "requiredVersion": "0.0.2",
@@ -13,16 +13,7 @@
       "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/funmedia.js"
     },
     {
-      "id": "forward.danmu",
-      "title": "十七弹幕",
-      "description": "十七弹幕",
-      "requiredVersion": "0.0.2",
-      "version": "1.0.3",
-      "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/shiqi.js"
-    },
-    {
-      "id": "forward.danmu",
+      "id": "forward.danmu2",
       "title": "Zzz弹幕",
       "description": "Zzz弹幕",
       "requiredVersion": "0.0.2",
@@ -31,7 +22,7 @@
       "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/zzz.js"
     },
     {
-      "id": "forward.danmu",
+      "id": "forward.danmu3",
       "title": "麻衣弹幕",
       "description": "麻衣弹幕",
       "requiredVersion": "0.0.2",
@@ -40,7 +31,7 @@
       "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/mayi.js"
     },
     {
-      "id": "forward.danmu",
+      "id": "forward.danmu4",
       "title": "Lily弹幕",
       "description": "Lily弹幕",
       "requiredVersion": "0.0.2",
@@ -49,7 +40,16 @@
       "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/lily.js"
     },
     {
-      "id": "forward.danmu",
+      "id": "forward.danmu5",
+      "title": "墨云阁",
+      "description": "墨云阁",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.3",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/shiqi.js"
+    },
+    {
+      "id": "forward.danmu6",
       "title": "Sherk弹幕",
       "description": "Sherk弹幕",
       "requiredVersion": "0.0.2",
