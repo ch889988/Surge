@@ -1,6 +1,6 @@
 #!name=Cloudflare Workers
-#!desc=Monitor Cloudflare Workers/Pages usage & Sub-Store status
-#!arguments=ID:"",Token:"",Limit:"100000",SubStoreURL:"",Lang:"en"
+#!desc=Monitor Cloudflare Workers/Pages usage
+#!arguments=ID:"",Token:"",Limit:"100000",Lang:"en"
 #!arguments-desc=ID: Cloudflare Account ID\nToken: Cloudflare API Token (需要 Account Analytics 读取权限)\nLimit: 每日请求额度(免费版 100000)\nSubStoreURL: Sub-Store 后端完整地址(可选)\nLang: 语言 en/cn
 
 [Script]
