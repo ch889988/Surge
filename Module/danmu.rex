@@ -1,1 +1,34 @@
-{"title":"弹幕模块","description":"弹幕模块","icon":"https://assets.rexnow.tv/scripts/rex-icon.png","widgets":[{"id":"danmu1.danmu.makka","title":"Funmedia弹幕","description":"Funmedia弹幕","requiredVersion":"0.0.1","version":"1.0.5","author":"𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖","url":"https://raw.githubusercontent.com/ch889988/Surge/main/js/funmedia.js"},{"id":"danmu2.danmu.makka","title":"墨云阁弹幕","description":"墨云阁弹幕","requiredVersion":"0.0.1","version":"1.1.9","author":"𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖","url":"https://raw.githubusercontent.com/ch889988/Surge/main/js/mayi.js"},{"id":"danmu3.danmu.makka","title":"Lily弹幕","description":"Lily弹幕","requiredVersion":"0.0.1","version":"2.5.0","author":"𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖","url":"https://raw.githubusercontent.com/ch889988/Surge/main/js/lily.js"}]}
+{
+  "title": "弹幕模块",
+  "description": "弹幕模块",
+  "icon": "https://assets.rexnow.tv/scripts/rex-icon.png",
+  "widgets": [
+    {
+      "id": "rex.danmu1",
+      "title": "弹幕1",
+      "version": "1.2.4",
+      "requiredVersion": "0.0.1",
+      "description": "弹幕1",
+      "author": "Rex",
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/funmedia.js"
+    },
+    {
+      "id": "rex.danmu2",
+      "title": "弹幕1",
+      "version": "1.2.4",
+      "requiredVersion": "0.0.1",
+      "description": "弹幕2",
+      "author": "Rex",
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/mayi.js"
+    },
+    {
+      "id": "rex.danmu3",
+      "title": "弹幕3",
+      "version": "1.2.4",
+      "requiredVersion": "0.0.1",
+      "description": "弹幕3",
+      "author": "Rex",
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/lily.js"
+    }
+  ]
+}
