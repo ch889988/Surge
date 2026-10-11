@@ -13,13 +13,12 @@
  *
  */
 WidgetMetadata = {
-  id: "forward.auto.danmu_api",
-  title: "Funmedia弹幕",
-  version: "1.0.3",
-  requiredVersion: "0.0.2",
-  description: "Funmedia弹幕",
-  author: "huangxd",
-  site: "https://github.com/huangxd-/ForwardWidgets",
+  id: "rex.auto.danmu_api",
+  title: "弹幕1",
+  version: "1.2.4",
+  requiredVersion: "0.0.1",
+  description: "弹幕1",
+  author: "Rex",
   globalParams: [
     {
       name: "server",
