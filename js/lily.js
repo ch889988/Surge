@@ -13,12 +13,13 @@
  *
  */
 WidgetMetadata = {
-  id: "rex.auto.danmu_api",
-  title: "弹幕3",
-  version: "1.2.4",
-  requiredVersion: "0.0.1",
-  description: "弹幕3",
-  author: "Rex",
+  id: "forward.auto.danmu_api",
+  title: "Lily弹幕",
+  version: "1.0.3",
+  requiredVersion: "0.0.2",
+  description: "Lily弹幕",
+  author: "huangxd",
+  site: "https://github.com/huangxd-/ForwardWidgets",
   globalParams: [
     {
       name: "server",
