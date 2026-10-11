@@ -4,7 +4,7 @@
   "icon": "https://assets.rexnow.tv/scripts/rex-icon.png",
   "widgets": [
     {
-      "id": "rex.danmu1",
+      "id": "danmu1",
       "title": "弹幕1",
       "version": "1.2.4",
       "requiredVersion": "0.0.1",
@@ -13,7 +13,7 @@
       "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu1.js"
     },
     {
-      "id": "rex.danmu2",
+      "id": "danmu2",
       "title": "弹幕1",
       "version": "1.2.4",
       "requiredVersion": "0.0.1",
@@ -22,7 +22,7 @@
       "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu2.js"
     },
     {
-      "id": "rex.danmu3",
+      "id": "danmu3",
       "title": "弹幕3",
       "version": "1.2.4",
       "requiredVersion": "0.0.1",
