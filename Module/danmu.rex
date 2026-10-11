@@ -10,7 +10,7 @@
       "requiredVersion": "0.0.1",
       "description": "弹幕1",
       "author": "Rex",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu1.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/funmedia.js"
     },
     {
       "id": "danmu2",
@@ -19,7 +19,7 @@
       "requiredVersion": "0.0.1",
       "description": "弹幕2",
       "author": "Rex",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu2.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/mayi.js"
     },
     {
       "id": "danmu3",
@@ -28,7 +28,7 @@
       "requiredVersion": "0.0.1",
       "description": "弹幕3",
       "author": "Rex",
-      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/danmu3.js"
+      "url": "https://raw.githubusercontent.com/ch889988/Surge/main/js/lily.js"
     }
   ]
 }
